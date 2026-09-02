@@ -1,7 +1,7 @@
 import cv2
 import os
 
-video_path = 'video/video1_1080p.mp4'
+video_path = 'video/video6_1080p.mp4'
 output_dir = 'images_frame'
 os.makedirs(output_dir, exist_ok=True)
 
@@ -10,7 +10,7 @@ fps = cap.get(cv2.CAP_PROP_FPS)
 total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
 duration = total_frames / fps
 
-interval_sec = 60
+interval_sec = 3
 
 t = 0
 count = 0
